@@ -1,11 +1,10 @@
-import React from "react";
-import BackgroundImage from "../../public/images/bg.png";
-import { words } from "../utils/data";
-import Button from "../components/Button.component";
-import HeroExp from "../components/HeroModels/HeroExp.component";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import React from "react";
 import AnimatedCounter from "../components/AnimatedCounter.component";
+import Button from "../components/Button.component";
+import HeroExp from "../components/HeroModels/HeroExp.component";
+import { words } from "../utils/data";
 
 const Hero = () => {
     useGSAP(() => {
@@ -26,7 +25,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src={BackgroundImage} alt="background" />
+        <img src="/images/bg.png" alt="background" />
       </div>
       <div className="hero-layout">
         <header className="flex fkex-col justify-start md:w-full w-screen md:px-20  px-5">

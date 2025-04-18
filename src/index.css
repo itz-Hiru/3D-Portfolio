@@ -160,7 +160,7 @@ section {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
 
-    .first-project-wrapper {
+    .main-project-wrapper {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
