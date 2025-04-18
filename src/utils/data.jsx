@@ -1,3 +1,9 @@
+import { FaAngular, FaReact } from "react-icons/fa";
+import { FaAndroid, FaFlutter, FaGitAlt } from "react-icons/fa6";
+import { IoLogoNodejs } from "react-icons/io5";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiSpringboot } from "react-icons/si";
+
 const navLinks = [
   {
     name: "Work",
@@ -37,37 +43,36 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    icon: <IoLogoNodejs />,
+    name: "NodeJS",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    icon: <FaReact />,
+    name: "React",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    icon: <RiNextjsFill />,
+    name: "NextJS",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    icon: <SiSpringboot />,
+    name: "Spring Boot",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    icon: <FaAngular />,
+    name: "Angular",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    icon: <FaAndroid />,
+    name: "Android",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    icon: <FaFlutter />,
+    name: "Flutter",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
+    icon: <FaGitAlt />,
+    name: "Git",
   },
 ];
 
