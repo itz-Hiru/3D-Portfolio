@@ -193,46 +193,52 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    id: 1,
+    name: "James L.",
+    mentions: "Startup Founder",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "Hirumitha’s attention to detail is unmatched. He took our vague ideas and turned them into a beautifully functional web app that our users love. Timely, communicative, and super talented!",
+    imgPath: "/images/Testimonials/James L.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    id: 2,
+    name: " Emily R.",
+    mentions: "Project Manager",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Working with Hirumitha was an absolute breeze. From design to deployment, everything was handled with expertise and clarity. I couldn't be happier with the results.",
+    imgPath: "/images/Testimonials/Emily R.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    id: 3,
+    name: "Arjun D.",
+    mentions: "UX Director",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "I've worked with many developers, but Hirumitha stands out for her creative approach and deep understanding of user experience. He’s a true problem-solver.",
+    imgPath: "/images/Testimonials/Arjun D.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    id: 4,
+    name: "Sophia M.",
+    mentions: "Marketing Lead",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Hirumitha brought our vision to life with stunning UI and smooth functionality. His professionalism and passion shine through in every step of the process.",
+    imgPath: "/images/Testimonials/Sophia M.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    id: 5,
+    name: "Carlos T.",
+    mentions: "Business Owner",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+      "Reliable, skilled, and super responsive — Hirumitha exceeded our expectations. The final product was clean, fast, and delivered ahead of schedule!",
+    imgPath: "/images/Testimonials/Carlos T.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    id: 6,
+    name: "Nayomi P.",
+    mentions: "Creative Director",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Hirumitha went above and beyond to deliver a sleek, responsive app that perfectly aligns with our brand. He’s got the rare mix of design talent and technical skill.",
+    imgPath: "/images/Testimonials/Nayomi P.png",
   },
 ];
 
