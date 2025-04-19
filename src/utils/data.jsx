@@ -265,6 +265,5 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };
