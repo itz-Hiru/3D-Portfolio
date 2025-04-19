@@ -1,9 +1,58 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React from "react";
+import GlowCard from "../components/GlowCard.component";
 import HeaderTitle from "../components/HeaderTitle.component";
 import { expCards } from "../utils/data";
-import GlowCard from "../components/GlowCard.component";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+  useGSAP(() => {
+    gsap.utils.toArray(".timeline-card").forEach((card) => {
+      gsap.from(card, {
+        xPercent: -100,
+        opacity: 0,
+        transformOrigin: "left left",
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+        },
+      });
+    });
+
+    gsap.to(".timeline", {
+      transformOrigin: "bottom bottom",
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: ".timeline",
+        start: "top center",
+        end: "70% center",
+        onUpdate: (self) => {
+          gsap.to(".timeline", {
+            scaleY: 1 - self.progress,
+          });
+        },
+      },
+    });
+
+    gsap.utils.toArray(".exp-text").forEach((text) => {
+      gsap.from(text, {
+        xPercent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 60%",
+        },
+      });
+    });
+  }, []);
+
   return (
     <section
       id="experience"
@@ -24,6 +73,32 @@ const Experience = () => {
                       {card.imgPath}
                     </div>
                   </GlowCard>
+                </div>
+                <div className="xl:w-4/6">
+                  <div className="flex items-start">
+                    <div className="timeline-wrapper">
+                      <div className="timeline" />
+                      <div className="gradient-line w-1 h-full" />
+                    </div>
+                    <div className="exp-text flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                      <div className="timeline-logo">
+                        <img src={card.logoPath} alt="card-logo" />
+                      </div>
+                      <div className="">
+                        <h1 className="font-semibold text-3xl">{card.title}</h1>
+                        <p className="my-5 text-[#839CB5] italic">
+                          Responsibilities
+                        </p>
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                          {card.responsibilities.map((responsibility) => (
+                            <li className="text-base" key={index}>
+                              {responsibility}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
