@@ -9,6 +9,7 @@ import LogoSection from "./sections/LogoSection.section";
 import Showcase from "./sections/Showcase.section";
 import TechStack from "./sections/TechStack.section";
 import Testimonials from "./sections/Testimonials.section";
+import Footer from "./sections/Footer.section";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <TechStack />
       <Testimonials />
       <Contact />
+      <Footer />
       <Toaster position="top-center" reverseOrder={false} />
     </div>
   );

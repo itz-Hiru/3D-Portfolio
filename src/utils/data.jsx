@@ -1,9 +1,9 @@
-import { FaAngular, FaCode, FaFigma, FaJava, FaReact } from "react-icons/fa";
+import { FaAngular, FaBehance, FaCode, FaDribbble, FaInstagram, FaLinkedinIn, FaReact } from "react-icons/fa";
 import { FaAndroid, FaFlutter, FaGitAlt } from "react-icons/fa6";
 import { IoIosColorPalette } from "react-icons/io";
 import { IoLogoNodejs } from "react-icons/io5";
 import { PiCodeSimpleFill } from "react-icons/pi";
-import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
 import { SiSpringboot } from "react-icons/si";
 
 const navLinks = [
@@ -242,22 +242,26 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
+const socialIcons = [
   {
     name: "insta",
-    imgPath: "/images/insta.png",
+    icon: <FaInstagram className="text-xl text-white"/>,
+    link: "https://www.instagram.com/x_hiru23/",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "behance",
+    icon: <FaBehance />,
+    link: "https://www.behance.net/hirumitkuladew",
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "dribbb6le",
+    icon: <FaDribbble />,
+    link: "https://dribbble.com/x_Hiru_xx",
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    icon: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/hirumitha",
   },
 ];
 
@@ -269,7 +273,7 @@ export {
   expCards,
   expLogos,
   testimonials,
-  socialImgs,
+  socialIcons,
   techStackIcons,
   navLinks,
 };
