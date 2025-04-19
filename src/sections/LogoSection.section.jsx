@@ -1,6 +1,6 @@
-import React from 'react'
-import { logoIconsList } from '../utils/data'
-import LogoIcon from '../components/LogoIcon.component'
+import React from "react";
+import LogoIcon from "../components/LogoIcon.component";
+import { logoIconsList } from "../utils/data";
 
 const LogoSection = () => {
   return (
@@ -18,7 +18,7 @@ const LogoSection = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LogoSection
+export default LogoSection;

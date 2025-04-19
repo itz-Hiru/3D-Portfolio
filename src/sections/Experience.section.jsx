@@ -65,10 +65,10 @@ const Experience = () => {
         />
         <div className="relative mt-32">
           <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card, index) => (
-              <div key={card.id} className="exp-card-wrapper">
+            {expCards.map((card, id) => (
+              <div key={id} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card} index={index}>
+                  <GlowCard card={card} index={id}>
                     <div className="flex flex-row items-center gap-5">
                       {card.imgPath}
                     </div>
@@ -81,17 +81,15 @@ const Experience = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="exp-text flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
-                        <img src={card.logoPath} alt="card-logo" />
-                      </div>
+                      <div className="timeline-logo">{card.logoPath}</div>
                       <div className="">
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-[#839CB5] italic">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                          {card.responsibilities.map((responsibility) => (
-                            <li className="text-base" key={index}>
+                          {card.responsibilities.map((responsibility, idx) => (
+                            <li className="text-base" key={`${id}-${idx}`}>
                               {responsibility}
                             </li>
                           ))}

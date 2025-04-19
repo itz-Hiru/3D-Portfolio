@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import { gsap } from "gsap/gsap-core";
-import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import { gsap } from "gsap/gsap-core";
+import React, { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,31 +47,35 @@ const Showcase = () => {
         <div className="showcaselayout">
           <div className="main-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="project 01" />
+              <img
+                src="/images/Projects/Audition-Hive.png"
+                alt="Audition-Hive"
+                className="object-fill"
+              />
             </div>
             <div className="text-content">
-              <h2>
-                On-Demand Rides made simple with a powerful, user-friendly
-                application called Ryde
-              </h2>
+              <h2>Audition Hive</h2>
               <p className="text-white-50 md:text-xl">
-                An application built with React Native, Expo, & TailwindCSS for
-                a fast, user-friendly experience.
+                An user-friendly blogging website deeveloped using react and
+                nodeJS.
               </p>
             </div>
           </div>
           <div className="project-list-wrapper">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img src="/images/project2.png" alt="project 02" />
+                <img src="/images/Projects/Plan-Pilot.png" alt="project 02" />
               </div>
-              <h2>Library Management System</h2>
+              <h2>Task Management System</h2>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="project 03" />
+                <img
+                  src="/images/Projects/Aurudu-Nakath.png"
+                  alt="project 03"
+                />
               </div>
-              <h2>YC Directory - A startup showcase Application</h2>
+              <h2>Aurudu Nakath Seettuwa</h2>
             </div>
           </div>
         </div>

@@ -1,10 +1,27 @@
-import { FaAngular, FaBehance, FaCode, FaDribbble, FaInstagram, FaLinkedinIn, FaReact } from "react-icons/fa";
+import {
+  FaAngular,
+  FaBehance,
+  FaCode,
+  FaDribbble,
+  FaInstagram,
+  FaLaptop,
+  FaLinkedinIn,
+  FaReact,
+  FaRocketchat,
+} from "react-icons/fa";
 import { FaAndroid, FaFlutter, FaGitAlt } from "react-icons/fa6";
+import { GiBrain } from "react-icons/gi";
 import { IoIosColorPalette } from "react-icons/io";
-import { IoLogoNodejs } from "react-icons/io5";
+import {
+  IoBarChart,
+  IoColorPalette,
+  IoLogoNodejs,
+  IoTime,
+} from "react-icons/io5";
 import { PiCodeSimpleFill } from "react-icons/pi";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiLightbulbFlashFill, RiNextjsFill } from "react-icons/ri";
 import { SiSpringboot } from "react-icons/si";
+import { TbLayoutDashboard } from "react-icons/tb";
 
 const navLinks = [
   {
@@ -26,21 +43,53 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  {
+    id: 1,
+    text: "Ideas",
+    icon: <RiLightbulbFlashFill className="text-black text-xl" />,
+  },
+  {
+    id: 2,
+    text: "Concepts",
+    icon: <GiBrain className="text-black text-xl" />,
+  },
+  {
+    id: 3,
+    text: "Designs",
+    icon: <IoColorPalette className="text-black text-xl" />,
+  },
+  {
+    id: 4,
+    text: "Code",
+    icon: <FaCode className="text-black text-xl" />,
+  },
+  {
+    id: 5,
+    text: "Ideas",
+    icon: <RiLightbulbFlashFill className="text-black text-xl" />,
+  },
+  {
+    id: 6,
+    text: "Concepts",
+    icon: <GiBrain className="text-black text-xl" />,
+  },
+  {
+    id: 7,
+    text: "Designs",
+    icon: <IoColorPalette className="text-black text-xl" />,
+  },
+  {
+    id: 8,
+    text: "Code",
+    icon: <FaCode className="text-black text-xl" />,
+  },
 ];
 
 const counterItems = [
-  { value: 1, suffix: "+", label: "Years of Experience" },
-  { value: 300, suffix: "+", label: "Code Commits" },
-  { value: 15, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { id: 1, value: 1, suffix: "+", label: "Years of Experience" },
+  { id: 2, value: 300, suffix: "+", label: "Code Commits" },
+  { id: 3, value: 15, suffix: "+", label: "Completed Projects" },
+  { id: 4, value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
@@ -80,19 +129,22 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    icon: <IoBarChart className="text-lime-400 text-3xl" />,
+    title: "Precision & Excellence",
+    description:
+      "Committed to delivering top-tier results with meticulous attention to detail in every aspect.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    icon: <FaRocketchat className="text-amber-300 text-3xl" />,
+    title: "Clear Communication",
+    description:
+      "Ensuring you're always in the loop with timely updates and transparent collaboration.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    icon: <IoTime className="text-pink-400 text-3xl" />,
+    title: "Timely Execution",
+    description:
+      "Projects delivered on schedule without compromising on quality or detail.",
   },
 ];
 
@@ -100,35 +152,35 @@ const techStackIcons = [
   {
     id: 1,
     name: "Frontend Developer",
-    modelPath: "/models/react_logo-transformed.glb",
+    modelPath: "/models/tech-stack/react-logo.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     id: 2,
     name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
+    modelPath: "/models/tech-stack/node-logo.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     id: 3,
     name: "UI UX Designer",
-    modelPath: "/models/figma-transformed.glb",
+    modelPath: "/models/tech-stack/figma-logo.glb",
     scale: 1.8,
     rotation: [0, 0, 0],
   },
   {
     id: 4,
     name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
+    modelPath: "/models/tech-stack/threejs-logo.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     id: 5,
     name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
+    modelPath: "/models/tech-stack/git-logo.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -140,7 +192,7 @@ const expCards = [
     review:
       "Versatile and skilled Full Stack Developer delivering seamless, high-performance web applications from frontend to backend with precision and efficiency.",
     imgPath: <PiCodeSimpleFill className="text-3xl text-amber-300" />,
-    logoPath: "/images/logo2.png",
+    logoPath: <FaLaptop className="text-pink-500 text-3xl" />,
     title: "Full Stack Developer",
     responsibilities: [
       "Designed and developed end-to-end web applications using modern frontend (React, Next.js) and backend (Node.js, Express, MongoDB) technologies.",
@@ -153,7 +205,7 @@ const expCards = [
     review:
       "Proficient Android Developer crafting intuitive, high-performance mobile apps using Android Studio with a focus on user-centric design and robust functionality.",
     imgPath: <FaAndroid className="text-3xl text-green-400" />,
-    logoPath: "/images/logo1.png",
+    logoPath: <FaAndroid className="text-green-400 text-3xl" />,
     title: "Android Developer",
     responsibilities: [
       "Developed robust, user-friendly Android applications using Java/Kotlin with clean architecture and MVVM pattern.",
@@ -166,7 +218,7 @@ const expCards = [
     review:
       "Creative UI/UX Designer crafting intuitive, user-focused digital experiences that blend aesthetics with functionality for seamless interaction.",
     imgPath: <IoIosColorPalette className="text-4xl text-orange-400" />,
-    logoPath: "/images/logo3.png",
+    logoPath: <TbLayoutDashboard className="text-3xl text-amber-400" />,
     title: "UI/ UX Designer",
     responsibilities: [
       "Created wireframes, prototypes, and high-fidelity designs using Figma based on user research and client requirements.",
@@ -244,21 +296,25 @@ const testimonials = [
 
 const socialIcons = [
   {
+    id: 1,
     name: "insta",
-    icon: <FaInstagram className="text-xl text-white"/>,
+    icon: <FaInstagram className="text-xl text-white" />,
     link: "https://www.instagram.com/x_hiru23/",
   },
   {
+    id: 2,
     name: "behance",
     icon: <FaBehance />,
     link: "https://www.behance.net/hirumitkuladew",
   },
   {
+    id: 3,
     name: "dribbb6le",
     icon: <FaDribbble />,
     link: "https://dribbble.com/x_Hiru_xx",
   },
   {
+    id: 4,
     name: "linkedin",
     icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/hirumitha",
@@ -266,14 +322,9 @@ const socialIcons = [
 ];
 
 export {
-  words,
-  abilities,
-  logoIconsList,
-  counterItems,
+  abilities, counterItems,
   expCards,
-  expLogos,
-  testimonials,
-  socialIcons,
-  techStackIcons,
-  navLinks,
+  expLogos, logoIconsList, navLinks, socialIcons,
+  techStackIcons, testimonials, words
 };
+

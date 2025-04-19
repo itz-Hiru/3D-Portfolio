@@ -1,7 +1,7 @@
 import React from "react";
+import GlowCard from "../components/GlowCard.component";
 import HeaderTitle from "../components/HeaderTitle.component";
 import { testimonials } from "../utils/data";
-import GlowCard from "../components/GlowCard.component";
 
 const Testimonials = () => {
   return (
@@ -12,22 +12,24 @@ const Testimonials = () => {
           subTitle="🌟 Hear What Clients Are Saying About Their Experience"
         />
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-          {testimonials.map((testimonial) => (
-            <GlowCard card={testimonial}>
-              <div className="flex items-center gap-3">
-                <div className="">
-                  <img
-                    src={testimonial.imgPath}
-                    alt="testimonial image"
-                    className="rounded-full size-15"
-                  />
+          {testimonials.map((testimonial, id) => (
+            <div key={id}>
+              <GlowCard card={testimonial}>
+                <div className="flex items-center gap-3">
+                  <div className="">
+                    <img
+                      src={testimonial.imgPath}
+                      alt="testimonial image"
+                      className="rounded-full size-15"
+                    />
+                  </div>
+                  <div className="">
+                    <p className="font-bold">{testimonial.name}</p>
+                    <p className="text-white-50">{testimonial.mentions}</p>
+                  </div>
                 </div>
-                <div className="">
-                  <p className="font-bold">{testimonial.name}</p>
-                  <p className="text-white-50">{testimonial.mentions}</p>
-                </div>
-              </div>
-            </GlowCard>
+              </GlowCard>
+            </div>
           ))}
         </div>
       </div>

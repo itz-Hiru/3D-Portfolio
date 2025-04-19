@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowImage from "/images/arrow-down.svg";
+import { FaArrowDown } from "react-icons/fa";
 
 const Button = ({ text, className, id }) => {
   return (
@@ -21,7 +21,7 @@ const Button = ({ text, className, id }) => {
         <div className="bg-circle" />
         <p className="text">{text}</p>
         <div className="arrow-wrapper">
-          <img src={ArrowImage} alt="arrow" />
+          <FaArrowDown className="text-lg text-black translate" />
         </div>
       </div>
     </a>

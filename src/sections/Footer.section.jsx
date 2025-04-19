@@ -7,11 +7,13 @@ const Footer = () => {
       <div className="flex flex-col">
         <div className="">
           <div className="flex flex-row justify-center gap-4">
-            {socialIcons.map((ico) => (
-              <div className="bg-black-200 rounded-xl w-[40px] h-[40px] flex items-center justify-center hover:bg-black-50 cursor-pointer">
-                <a href={ico.link} className="icon" target="_blank">
-                  {ico.icon}
-                </a>
+            {socialIcons.map((ico, id) => (
+              <div key={id}>
+                <div className="bg-black-200 rounded-xl w-[40px] h-[40px] flex items-center justify-center hover:bg-black-50 cursor-pointer">
+                  <a href={ico.link} className="icon" target="_blank">
+                    {ico.icon}
+                  </a>
+                </div>
               </div>
             ))}
           </div>

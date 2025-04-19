@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import HeaderTitle from "../components/HeaderTitle.component";
-import ContactExperience from "../components/Models/Contact/ContactExperience.component";
 import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { MdArrowOutward } from "react-icons/md";
+import HeaderTitle from "../components/HeaderTitle.component";
+import ContactExperience from "../components/Models/Contact/ContactExperience.component";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
