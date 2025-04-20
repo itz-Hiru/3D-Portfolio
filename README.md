@@ -71,7 +71,7 @@ src/
 
 ## 🧑‍🎨 Designed & Developed By
 
-Made with ❤️ by **[Your Name](https://hirumitha-portfolio.vercel.app)**  
+Made with ❤️ by **[Hirumitha Kuladewa](https://hirumitha-portfolio.vercel.app)**  
 _“Design is intelligence made visible.”_
 
 ## 📄 License
